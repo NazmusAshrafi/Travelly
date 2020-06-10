@@ -45,7 +45,7 @@ const theme = createMuiTheme({
   },
 });
 
-axios.defaults.baseURL = "http://192.168.0.100/";
+axios.defaults.baseURL = "http://localhost:5000";
 
 // Check for token
 if (localStorage.jwtToken) {

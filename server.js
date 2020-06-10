@@ -40,7 +40,7 @@ if (process.env.NODE_ENV === "production") {
   });
 }
 
-const port = process.env.PORT || 5000 || "http://192.168.0.100/";
+const port = process.env.PORT || 5000;
 
 app.listen(port, () => {
   console.log(`port running at ${port}...`);
