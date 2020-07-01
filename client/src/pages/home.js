@@ -36,7 +36,7 @@ class home extends Component {
       // recentPostMarkup = <h4>user feed</h4>;
       recentPostMarkup = this.props.post ? (
         posts
-          .sort((a, b) => (a.itemM > b.itemM ? 1 : -1))
+          // .sort((a, b) => (a.itemM > b.itemM ? 1 : -1))
           .map((post) => <Post key={post._id} entry={post} />)
       ) : (
         <CircularProgress size={30} />
